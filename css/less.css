@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'microsoft yahei', 'Helvetica', simhei, simsun, sans-serif;
+  background-color: #f7f7f7;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+.player {
+  width: 720px;
+  height: 360px;
+  margin: 0 auto;
+  background: url(../images/loading.gif);
+  background-size: over;
+  position: relative;
+}
+.player video {
+  height: 100%;
+  margin: 0 auto;
+  display: none;
+}
+.player .controls {
+  width: 720px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  bottom: -40px;
+  background-color: #000;
+}
+.player .controls .switch {
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.player .controls .expand {
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.player .controls .progress {
+  width: 430px;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  bottom: 15px;
+  background-color: #555;
+}
+.player .controls .progress .bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 999;
+}
+.player .controls .progress .loaded {
+  width: 60%;
+  height: 100%;
+  background-color: #999;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.player .controls .progress .elapse {
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.player .controls .time {
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 499px;
+  color: #fff;
+  font-size: 14px;
+}
